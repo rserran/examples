@@ -33,6 +33,46 @@
     ]
   },
   {
+    "objectID": "digit_files/index.html#overview",
+    "href": "digit_files/index.html#overview",
+    "title": "Documents",
+    "section": "Overview",
+    "text": "Overview\nThis section contains examples for generating various document outputs from clinical trial data using pharmaverse packages. These examples demonstrate how to create professional reports, presentations, and other document formats commonly used in pharmaceutical research and regulatory submissions.\nThe examples leverage R’s document generation capabilities combined with pharmaverse tools to automate the creation of formatted outputs.",
+    "crumbs": [
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "digit_files/index.html#examples",
+    "href": "digit_files/index.html#examples",
+    "title": "Documents",
+    "section": "Examples",
+    "text": "Examples\nThe following document generation examples are available:\n\nWord Documents\n\nDOCX Output - Learn how to generate Microsoft Word documents from R, including tables, listings, and formatted text. This is particularly useful for creating clinical study reports and documentation that require Word format.\n\n\n\nPowerPoint Presentations\n\nAuto Slider - Create automated PowerPoint presentations with clinical trial outputs. This example demonstrates how to programmatically generate slides containing tables, figures, and analysis results, streamlining the creation of study presentations and data review meetings.",
+    "crumbs": [
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "digit_files/index.html#use-cases",
+    "href": "digit_files/index.html#use-cases",
+    "title": "Documents",
+    "section": "Use Cases",
+    "text": "Use Cases\nThese document generation capabilities are valuable for:\n\nClinical study reports (CSRs)\nStatistical analysis plans (SAPs)\nData review meetings\nRegulatory submission documents\nStudy team presentations\nInternal stakeholder communications",
+    "crumbs": [
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "digit_files/index.html#getting-started",
+    "href": "digit_files/index.html#getting-started",
+    "title": "Documents",
+    "section": "Getting Started",
+    "text": "Getting Started\nEach example demonstrates:\n\nSetting up document templates\nPopulating documents with analysis results\nFormatting and styling outputs\nAutomating repetitive document creation tasks\n\nThese tools can significantly reduce the time and effort required to produce professional documentation from your clinical trial analyses.",
+    "crumbs": [
+      "Documents"
+    ]
+  },
+  {
     "objectID": "adam/adrs.html#select-overall-response-records-and-set-parameter-details",
     "href": "adam/adrs.html#select-overall-response-records-and-set-parameter-details",
     "title": "ADRS",
@@ -239,6 +279,86 @@
     "crumbs": [
       "ADaM",
       "ADSL"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#overview",
+    "href": "adam/index.html#overview",
+    "title": "ADaM",
+    "section": "Overview",
+    "text": "Overview\nThis section provides end-to-end examples for creating Analysis Data Model (ADaM) datasets using pharmaverse packages. ADaM is a CDISC standard designed to facilitate efficient generation, replication, and review of clinical trial statistical analyses.\nThe examples demonstrate how to leverage multiple pharmaverse packages together, including {admiral}, {metacore}, {metatools}, and {xportr}, to build analysis-ready datasets from SDTM data.\nAll examples use SDTM datasets from {pharmaversesdtm} as input, ensuring consistency and reproducibility.",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#examples",
+    "href": "adam/index.html#examples",
+    "title": "ADaM",
+    "section": "Examples",
+    "text": "Examples\n\nSubject-Level Analysis Dataset (ADSL)\n\nADSL (Subject-Level Analysis Dataset) - Create the foundational subject-level dataset containing demographic, treatment, and study participation information.\n\n\n\n\n\n\n\nTipStart Here\n\n\n\nADSL is the foundation for most other ADaM datasets. We recommend starting with this example if you’re new to ADaM development with pharmaverse packages. ADSL contains one record per subject and serves as the basis for merging subject-level variables into other ADaM datasets.\n\n\n\n\nBasic Data Structure (BDS) Analysis Datasets\nBDS datasets follow a standard structure with one observation per subject per analysis parameter per analysis timepoint. These are commonly used for efficacy and safety analyses.\n\nADVS (Vital Signs Analysis) - Generate vital signs analysis dataset with baseline and change from baseline calculations.\nADRS (Response Analysis) - Create response analysis dataset for oncology efficacy endpoints.\n\n\n\nOccurrence Data Structure (OCCDS) Analysis Datasets\nOCCDS datasets have one observation per subject per occurrence of an event, capturing multiple events per subject.\n\nADAE (Adverse Events Analysis) - Build an analysis dataset for adverse events with derived variables for analysis and reporting.\n\n\n\nTime-to-Event Analysis Dataset (ADTTE)\n\nADTTE (Time-to-Event Analysis) - Develop oncology time-to-event analysis dataset for survival analyses, including censoring and event derivations.\n\n\n\nPharmacokinetic Analysis Datasets\n\nADPC (Pharmacokinetic Concentrations) - Build pharmacokinetic concentration analysis dataset with timepoint derivations.\nADPPK (Population Pharmacokinetic) - Create population pharmacokinetic analysis dataset for modeling and simulation.",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#quick-reference",
+    "href": "adam/index.html#quick-reference",
+    "title": "ADaM",
+    "section": "Quick Reference",
+    "text": "Quick Reference\n\n\n\nDataset Type\nExample\nKey Packages\nStructure\n\n\n\n\nSubject-Level\nADSL\nadmiral, metacore, metatools, xportr\nOne record per subject\n\n\nBDS - Vitals\nADVS\nadmiral, metacore, metatools, xportr\nOne record per subject per parameter per timepoint\n\n\nBDS - Response\nADRS\nadmiral, metacore, metatools, xportr\nOne record per subject per parameter per timepoint\n\n\nOCCDS - Safety\nADAE\nadmiral, metacore, metatools, xportr\nOne record per subject per event\n\n\nTime-to-Event\nADTTE\nadmiral, metacore, metatools, xportr\nOne record per subject per parameter\n\n\nPK Concentration\nADPC\nadmiral, metacore, metatools, xportr\nOne record per subject per timepoint per analyte\n\n\nPopulation PK\nADPPK\nadmiral, metacore, metatools, xportr\nOne record per subject per timepoint",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#workflow-overview",
+    "href": "adam/index.html#workflow-overview",
+    "title": "ADaM",
+    "section": "Workflow Overview",
+    "text": "Workflow Overview\nEach example demonstrates a consistent workflow for creating ADaM datasets:\n\nData Input - Load SDTM datasets and required metadata specifications\nDerivations - Apply ADaM derivation functions to create analysis variables (e.g., baseline flags, change from baseline, derived parameters)\nMetadata Application - Use metadata specifications to control dataset attributes, labels, and formats\nValidation - Perform dataset checks and validation against specifications\nExport - Create SAS transport files ready for regulatory submission\n\n\n\n\n\n\n\nNoteDataset Dependencies\n\n\n\nMost ADaM datasets require ADSL as input for subject-level variables. The typical flow is:\nSDTM datasets → ADSL → Other ADaM datasets → TLGs",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#key-packages-used",
+    "href": "adam/index.html#key-packages-used",
+    "title": "ADaM",
+    "section": "Key Packages Used",
+    "text": "Key Packages Used\n\n{admiral} - Core ADaM derivations and functions for creating analysis datasets following CDISC standards\n{metacore} - Metadata and specifications management, storing variable-level metadata\n{metatools} - Dataset building and validation using metadata, applying specifications to datasets\n{xportr} - SAS transport file creation and eSub compliance checks for regulatory submissions",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#meet-the-admiral-family",
+    "href": "adam/index.html#meet-the-admiral-family",
+    "title": "ADaM",
+    "section": "Meet the {admiral} Family",
+    "text": "Meet the {admiral} Family\nThe {admiral} ecosystem includes specialized extension packages for different therapeutic areas and study types:\n\nAdmiral Family Overview - Explore the complete admiral family\nExtension Packages - These packages provide additional therapeutic area support, for example including functions for oncology endpoints such as RECIST v1.1 for solid tumors ({admiralonco})\nAdditional extensions - Packages for other therapeutic areas are under development\n\nEach extension package builds on {admiral} core functionality while providing domain-specific derivations.",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#additional-resources",
+    "href": "adam/index.html#additional-resources",
+    "title": "ADaM",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\n\n\n\n\n\nNoteLearn More\n\n\n\n\nCDISC ADaM Implementation Guide - Official ADaM standard documentation and data structure specifications\n{admiral} Documentation - Comprehensive guide to admiral functions, workflows, and best practices\nPharmaverse E2E Clinical Reporting - Complete list of pharmaverse packages supporting the full clinical reporting pipeline",
+    "crumbs": [
+      "ADaM"
+    ]
+  },
+  {
+    "objectID": "adam/index.html#common-derivations-across-examples",
+    "href": "adam/index.html#common-derivations-across-examples",
+    "title": "ADaM",
+    "section": "Common Derivations Across Examples",
+    "text": "Common Derivations Across Examples\nWhile each ADaM dataset has unique requirements, several derivation patterns appear across multiple examples:\n\nBaseline derivations - Identifying and flagging baseline records\nChange from baseline - Calculating analysis values relative to baseline\nAnalysis flags - Creating indicators for analysis populations and key events\nDate/time imputations - Handling partial or missing dates\nTreatment variables - Deriving planned and actual treatment information\nParameter derivations - Creating derived or calculated parameters\n\nThese common patterns are demonstrated throughout the examples, showing how {admiral} functions can be reused across different dataset types.",
+    "crumbs": [
+      "ADaM"
     ]
   },
   {
@@ -624,6 +744,76 @@
     ]
   },
   {
+    "objectID": "tlg/index.html#overview",
+    "href": "tlg/index.html#overview",
+    "title": "TLG",
+    "section": "Overview",
+    "text": "Overview\nThis section demonstrates how to create Tables, Listings, and Graphs (TLGs) for clinical study reporting using pharmaverse packages. TLGs are essential components of clinical study reports and regulatory submissions, providing clear presentation of study results.\nThe examples showcase two distinct approaches for generating publication-quality outputs, working with ADaM datasets as input.",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#which-approach-should-i-use",
+    "href": "tlg/index.html#which-approach-should-i-use",
+    "title": "TLG",
+    "section": "Which Approach Should I Use?",
+    "text": "Which Approach Should I Use?\n\nAnalysis Results Datasets (ARDs) 🆕\nBest for:\n\nOrganizations implementing the CDISC Analysis Results Standard\nTeams wanting reusable, structured analysis results\nProjects requiring multiple output formats from the same statistics\nRegulatory submissions emphasizing data standardization and traceability\nSeparating statistical computation from table formatting\n\nPackages: {cards}, {tfrmt}, {gtsummary}\nWorkflow: Data → ARD (structured statistics) → Formatted Table\n\n\nClassic Direct Summarization 📊\nBest for:\n\nQuick ad-hoc analyses and exploratory work\nTeams familiar with traditional R table packages\nComplex nested layouts requiring fine-grained control\nExisting workflows using {rtables}/{tern}\nSingle-purpose table generation\n\nPackages: {rtables}, {tern}\nWorkflow: Data → Formatted Table (single step)\n\n\n\n\n\n\nTipGetting Started\n\n\n\nBoth approaches produce publication-quality outputs - the choice depends on your workflow and organizational standards. ARDs represent the emerging standard for structured analysis results, while the classic approach offers a mature, stable ecosystem with extensive layout capabilities.",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#examples-by-approach",
+    "href": "tlg/index.html#examples-by-approach",
+    "title": "TLG",
+    "section": "Examples by Approach",
+    "text": "Examples by Approach\n\nUsing Analysis Results Datasets (ARDs)\nThese examples leverage the CDISC Analysis Results Standard, creating structured ARDs first using {cards}, then formatting them into tables. This two-step approach promotes reusability, standardization, and separation of statistical computation from presentation.\n\nDemographic Tables\n\n{cards} + {gtsummary} - Build demographics from ARDs with bidirectional workflow (ARD → Table or Table → ARD)\n{cards} + {tfrmt} - Create highly customized demographic tables from ARDs\n\n\n\nAdverse Events Tables\n\n{cards} + {tfrmt} - Generate AE summaries with hierarchical organization and custom formatting\n\n\n\n\n\nClassic Direct Summarization\nThese examples create tables directly from analysis datasets using the traditional single-step approach with {rtables} and {tern}.\n\nDemographic Tables\n\n{rtables} + {tern} - Comprehensive demographic and baseline characteristics summaries\n\n\n\nAdverse Events Tables\n\n{rtables} + {tern} - AE summaries with frequency counts, percentages, and system organ class groupings\n\n\n\n\n\nListings & Graphs\n\nPharmacokinetic Outputs - Concentration-time graphs and parameter summaries",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#quick-reference-table",
+    "href": "tlg/index.html#quick-reference-table",
+    "title": "TLG",
+    "section": "Quick Reference Table",
+    "text": "Quick Reference Table\n\n\n\nTable Type\nARD Approach\nClassic Approach\n\n\n\n\nDemographics\n{cards} + {gtsummary}{cards} + {tfrmt}\n{rtables} + {tern}\n\n\nAdverse Events\n{cards} + {tfrmt}\n{rtables} + {tern}\n\n\nPK Outputs\nComing soon\nView example",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#key-packages-used",
+    "href": "tlg/index.html#key-packages-used",
+    "title": "TLG",
+    "section": "Key Packages Used",
+    "text": "Key Packages Used\n\nARD Ecosystem\n\n{cards} - Create and manipulate Analysis Results Datasets following CDISC standards\n{tfrmt} - Transform ARDs into publication-ready tables with precise formatting control\n{gtsummary} - Generate listings or summary tables (with or without ARDs) with support for multiple output formats\n\n\n\nClassic Ecosystem\n\n{rlistings} - Create regulatory ready listings for health authority review\n{rtables} - Create complex tables with flexible layouts and nested structures\n{tern} - Analysis and reporting functions specifically designed for clinical trials\n\n\n\nGraphics\n\n{ggplot2} - Publication-quality graphics for all approaches",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#what-each-example-includes",
+    "href": "tlg/index.html#what-each-example-includes",
+    "title": "TLG",
+    "section": "What Each Example Includes",
+    "text": "What Each Example Includes\nAll examples provide complete, reproducible code with:\n\nData preprocessing and preparation steps\nSummary statistics calculation\nTable or graph generation with detailed explanations\nFormatting and styling for publication-ready output\nComments and best practices\n\nAll examples use ADaM datasets from {pharmaverseadam} as input, ensuring consistency and reproducibility.",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
+    "objectID": "tlg/index.html#learn-more",
+    "href": "tlg/index.html#learn-more",
+    "title": "TLG",
+    "section": "Learn More",
+    "text": "Learn More\n\n\n\n\n\n\nNoteResources\n\n\n\n\nCDISC Analysis Results Standard - Official standard documentation\n{cards} package documentation - Learn more about creating ARDs\n{gtsummary} package documentation - Learn more about creating summary tables\n{tfrmt} package documentation - Advanced table formatting with ARDs\n{rtables} package documentation - Comprehensive table creation guide",
+    "crumbs": [
+      "TLG"
+    ]
+  },
+  {
     "objectID": "tlg/adverse_events.html#introduction",
     "href": "tlg/adverse_events.html#introduction",
     "title": "Adverse Events",
@@ -654,6 +844,86 @@
     "crumbs": [
       "TLG",
       "Adverse Events"
+    ]
+  },
+  {
+    "objectID": "interactive/index.html#overview",
+    "href": "interactive/index.html#overview",
+    "title": "Interactive",
+    "section": "Overview",
+    "text": "Overview\nThis section showcases interactive applications and tools for exploring and analyzing clinical trial data. Interactive applications enable dynamic data exploration, real-time analysis updates, and enhanced collaboration among study teams.\nThe examples demonstrate how pharmaverse packages can be used to create sophisticated interactive experiences for clinical data analysis and reporting.",
+    "crumbs": [
+      "Interactive"
+    ]
+  },
+  {
+    "objectID": "interactive/index.html#examples",
+    "href": "interactive/index.html#examples",
+    "title": "Interactive",
+    "section": "Examples",
+    "text": "Examples\nThe following interactive application examples are available:\n\nInteractive Data Exploration\n\nTeal Applications - Explore the {teal} framework for building modular, interactive Shiny applications specifically designed for clinical trial data analysis. Teal provides a standardized approach to creating interactive apps that integrate multiple analysis modules, enabling efficient data exploration, visualization, and reporting.",
+    "crumbs": [
+      "Interactive"
+    ]
+  },
+  {
+    "objectID": "interactive/index.html#benefits-of-interactive-applications",
+    "href": "interactive/index.html#benefits-of-interactive-applications",
+    "title": "Interactive",
+    "section": "Benefits of Interactive Applications",
+    "text": "Benefits of Interactive Applications\nInteractive applications provide several advantages for clinical trial analysis:\n\nDynamic Exploration - Allow users to interactively filter, subset, and explore data without programming\nReal-Time Updates - See analysis results update instantly as parameters change\nReproducibility - Maintain reproducible analyses while providing flexibility\nCollaboration - Enable statisticians, clinicians, and stakeholders to work together\nRegulatory Review - Facilitate reviewer exploration of study data and analyses",
+    "crumbs": [
+      "Interactive"
+    ]
+  },
+  {
+    "objectID": "interactive/index.html#key-packages-used",
+    "href": "interactive/index.html#key-packages-used",
+    "title": "Interactive",
+    "section": "Key Packages Used",
+    "text": "Key Packages Used\n\n{teal} - Framework for building modular clinical trial Shiny applications\n{shiny} - Web application framework for R\nVarious pharmaverse packages - Integrated for data processing and analysis",
+    "crumbs": [
+      "Interactive"
+    ]
+  },
+  {
+    "objectID": "interactive/index.html#getting-started",
+    "href": "interactive/index.html#getting-started",
+    "title": "Interactive",
+    "section": "Getting Started",
+    "text": "Getting Started\nThe examples in this section may include interactive components that can be run locally or accessed through hosted applications. Follow the instructions in each example to set up and explore the interactive features.\nThese tools are particularly valuable for: - Exploratory data analysis - Safety monitoring - Efficacy assessment - Data review meetings - Regulatory interactions",
+    "crumbs": [
+      "Interactive"
+    ]
+  },
+  {
+    "objectID": "sdtm/index.html#overview",
+    "href": "sdtm/index.html#overview",
+    "title": "SDTM",
+    "section": "Overview",
+    "text": "Overview\nThis section contains examples demonstrating the creation of Study Data Tabulation Model (SDTM) domains using pharmaverse packages. SDTM is a CDISC standard for organizing and formatting data to streamline the regulatory review process.\nThe examples in this section primarily utilize the {sdtm.oak} package along with other pharmaverse tools to transform raw clinical trial data into SDTM-compliant datasets.",
+    "crumbs": [
+      "SDTM"
+    ]
+  },
+  {
+    "objectID": "sdtm/index.html#examples",
+    "href": "sdtm/index.html#examples",
+    "title": "SDTM",
+    "section": "Examples",
+    "text": "Examples\nThe following SDTM domain examples are available:\n\nDemographics and Baseline Characteristics\n\nDM (Demographics) - Learn how to create a Demographics domain including subject-level information such as age, sex, race, and study participation dates.\n\n\n\nClinical Events\n\nAE (Adverse Events) - Create an Adverse Events domain to capture information about adverse events experienced by subjects during the study.\n\n\n\nFindings\n\nVS (Vital Signs) - Build a Vital Signs domain to record measurements such as blood pressure, heart rate, temperature, and other vital sign observations.",
+    "crumbs": [
+      "SDTM"
+    ]
+  },
+  {
+    "objectID": "sdtm/index.html#getting-started",
+    "href": "sdtm/index.html#getting-started",
+    "title": "SDTM",
+    "section": "Getting Started",
+    "text": "Getting Started\nEach example includes:\n\nIntroduction and context\nStep-by-step programming workflow\nCode examples using pharmaverse packages\nExpected output and validation checks\n\nAll examples use raw datasets from {pharmaverseraw} as input, ensuring consistency and reproducibility.\nBefore working with these examples, it’s recommended to review the {sdtm.oak} package documentation to understand key concepts such as algorithms, oak_id_vars, and mapping functions.",
+    "crumbs": [
+      "SDTM"
     ]
   },
   {
@@ -745,11 +1015,141 @@
     ]
   },
   {
+    "objectID": "esub/index.html#overview",
+    "href": "esub/index.html#overview",
+    "title": "eSubmission",
+    "section": "Overview",
+    "text": "Overview\nThis section provides examples for preparing electronic submissions (eSubmissions) to regulatory agencies using pharmaverse packages. eSubmissions are a critical component of the drug approval process, requiring properly formatted and validated datasets along with comprehensive documentation.\nThe examples demonstrate how to leverage pharmaverse tools to ensure your submissions meet regulatory requirements and follow industry best practices.",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#examples",
+    "href": "esub/index.html#examples",
+    "title": "eSubmission",
+    "section": "Examples",
+    "text": "Examples\nIn our eSubmission example, you will find ever-evolving guidance on creating and checking all of the key clinical reporting components of an eSubmission when using R and open source\n\nAnalysis Data Reviewer’s Guide\n\nADRG (Analysis Data Reviewer’s Guide) - Learn how to create an Analysis Data Reviewer’s Guide, a key document in regulatory submissions. The ADRG provides reviewers with essential information about the analysis datasets, data structures, and derivations used in the submission. This example demonstrates how to document dataset specifications, define.xml generation, and other critical components of a complete eSubmission package.",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#key-components-of-esubmissions",
+    "href": "esub/index.html#key-components-of-esubmissions",
+    "title": "eSubmission",
+    "section": "Key Components of eSubmissions",
+    "text": "Key Components of eSubmissions\nSuccessful electronic submissions typically include:\n\nDatasets - Properly formatted SDTM and ADaM datasets in SAS transport (XPT) format\nDefine.xml - Machine-readable dataset and variable definitions\nReviewers Guides - Comprehensive guide to the tabulation and analysis datasets and derivations\nReadable Code - Accessible and understandable TLG programs for key endpoints",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#regulatory-standards",
+    "href": "esub/index.html#regulatory-standards",
+    "title": "eSubmission",
+    "section": "Regulatory Standards",
+    "text": "Regulatory Standards\neSubmissions must comply with various regulatory standards and guidance:\n\nCDISC Standards - SDTM, ADaM, Define-XML specifications\nFDA Guidance - Study Data Technical Conformance Guide\nICH Guidelines - International standards for data standards and eCTD",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#key-packages-used",
+    "href": "esub/index.html#key-packages-used",
+    "title": "eSubmission",
+    "section": "Key Packages Used",
+    "text": "Key Packages Used\n\n{xportr} - Creating SAS transport files and performing eSub checks\n{metacore} - Managing metadata and specifications\n{metatools} - Working with metadata and specifications to format and check data\nVarious pharmaverse packages - Dataset creation and validation",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#getting-started",
+    "href": "esub/index.html#getting-started",
+    "title": "eSubmission",
+    "section": "Getting Started",
+    "text": "Getting Started\nThe examples demonstrate:\n\nPreparing analysis datasets for submission\nGenerating required documentation\nValidating datasets against specifications\nCreating submission-ready packages\n\nFollowing these examples will help ensure your submissions meet regulatory requirements and facilitate efficient review by regulatory agencies.",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "esub/index.html#resources",
+    "href": "esub/index.html#resources",
+    "title": "eSubmission",
+    "section": "Resources",
+    "text": "Resources\nFor more information on eSubmissions and regulatory requirements, consult: - CDISC website - FDA Study Data Standards Resources",
+    "crumbs": [
+      "eSubmission"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#overview",
+    "href": "logging/index.html#overview",
+    "title": "Logs",
+    "section": "Overview",
+    "text": "Overview\nThis section demonstrates best practices for implementing logging in clinical trial data analysis workflows using pharmaverse packages. Proper logging is essential for tracking data transformations, debugging issues, maintaining audit trails, and ensuring regulatory compliance.\nThe examples show how to integrate logging capabilities into your analysis pipelines to create comprehensive records of data processing steps and program execution.",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#examples",
+    "href": "logging/index.html#examples",
+    "title": "Logs",
+    "section": "Examples",
+    "text": "Examples\nThe following logging examples are available:\n\nWorkflow Logging\n\nLogging Implementation - Learn how to implement comprehensive logging in your clinical trial analysis workflows. This example covers setting up logging infrastructure, capturing key events and data transformations, and creating audit-ready log files that document the entire analysis process.",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#importance-of-logging",
+    "href": "logging/index.html#importance-of-logging",
+    "title": "Logs",
+    "section": "Importance of Logging",
+    "text": "Importance of Logging\nEffective logging provides critical benefits for clinical trial analyses:\n\nAudit Trail - Create a complete record of all data transformations and analysis steps\nDebugging - Quickly identify and diagnose issues in complex data pipelines\nValidation - Support validation efforts by documenting program behavior\nRegulatory Compliance - Meet regulatory requirements for traceability and documentation\nQuality Assurance - Enable thorough review of analysis processes\nReproducibility - Ensure analyses can be recreated and verified",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#key-considerations",
+    "href": "logging/index.html#key-considerations",
+    "title": "Logs",
+    "section": "Key Considerations",
+    "text": "Key Considerations\nWhen implementing logging in clinical trial workflows, consider:\n\nWhat to log - Critical data transformations, decisions, warnings, and errors\nLog format - Structured, searchable, and human-readable output\nSensitive data - Protect patient privacy and data security by being cautious of what gets exposed in log files\nRetention - Appropriate storage and archival of log files\nPerformance - Balance comprehensive logging with execution efficiency",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#key-packages-used",
+    "href": "logging/index.html#key-packages-used",
+    "title": "Logs",
+    "section": "Key Packages Used",
+    "text": "Key Packages Used\n\n{logr} - Functions to help create log files\n{logrx} - Tools to facilitate logging in a clinical environment\n{whirl} - Provide functionalities for executing scripts in batch and simultaneously getting a log from the individual executions",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
+    "objectID": "logging/index.html#getting-started",
+    "href": "logging/index.html#getting-started",
+    "title": "Logs",
+    "section": "Getting Started",
+    "text": "Getting Started\nThe logging examples demonstrate:\n\nSetting up logging infrastructure\nIntegrating logging into data processing workflows\nCapturing meaningful information at appropriate levels\nCreating log outputs suitable for regulatory review\n\nImplementing robust logging practices is an investment in code quality, maintainability, and regulatory readiness.",
+    "crumbs": [
+      "Logs"
+    ]
+  },
+  {
     "objectID": "session.html",
     "href": "session.html",
     "title": "Session Info",
     "section": "",
-    "text": "Session Info\n\nsessionInfo()\n\nR version 4.5.2 (2025-10-31)\nPlatform: x86_64-pc-linux-gnu\nRunning under: Ubuntu 24.04.3 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 \nLAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\ntime zone: UTC\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.5.2    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.5.2       htmltools_0.5.9   otel_0.2.0        yaml_2.3.12      \n [9] rmarkdown_2.30    knitr_1.51        jsonlite_2.0.0    xfun_0.56        \n[13] digest_0.6.39     rlang_1.1.7       evaluate_1.0.5   \n\n\n\n\nInstalled Packages\n\nknitr::kable(installed.packages()[, c(\"Package\", \"Version\")], row.names = FALSE)\n\n\n\n\nPackage\nVersion\n\n\n\n\nabind\n1.4-8\n\n\nadmiral\n1.4.1\n\n\nadmiraldev\n1.4.0\n\n\nadmiralonco\n1.4.0\n\n\narchive\n1.1.12.1\n\n\naskpass\n1.2.1\n\n\nassertthat\n0.2.1\n\n\nautoslider.core\n0.3.2\n\n\nbackports\n1.5.0\n\n\nbase64enc\n0.1-6\n\n\nbigD\n0.3.1\n\n\nbit\n4.6.0\n\n\nbit64\n4.6.0-1\n\n\nbitops\n1.0-9\n\n\nbrew\n1.0-10\n\n\nbrio\n1.1.5\n\n\nbroom\n1.0.12\n\n\nbsicons\n0.1.2\n\n\nbslib\n0.10.0\n\n\ncachem\n1.1.0\n\n\ncallr\n3.7.6\n\n\ncar\n3.1-5\n\n\ncarData\n3.0-6\n\n\ncards\n0.7.1\n\n\ncardx\n0.3.2\n\n\ncaTools\n1.18.3\n\n\ncellranger\n1.1.0\n\n\ncheckmate\n2.3.4\n\n\ncli\n3.6.5\n\n\nclipr\n0.8.0\n\n\ncolorspace\n2.1-2\n\n\ncolourpicker\n1.3.0\n\n\ncommon\n1.1.4\n\n\ncommonmark\n2.0.0\n\n\nconfintr\n1.0.2\n\n\ncorrplot\n0.95\n\n\ncowplot\n1.2.0\n\n\ncpp11\n0.5.3\n\n\ncrayon\n1.5.3\n\n\ncrosstalk\n1.2.2\n\n\ncurl\n7.0.0\n\n\ndata.table\n1.18.2.1\n\n\nDeriv\n4.2.0\n\n\ndesc\n1.4.3\n\n\ndiffobj\n0.3.6\n\n\ndigest\n0.6.39\n\n\ndoBy\n4.7.1\n\n\ndplyr\n1.2.0\n\n\nDT\n0.34.0\n\n\nellipsis\n0.3.2\n\n\nemmeans\n2.0.1\n\n\nestimability\n1.5.1\n\n\nevaluate\n1.0.5\n\n\nfarver\n2.1.2\n\n\nfastmap\n1.2.0\n\n\nfilelock\n1.0.3\n\n\nfilters\n0.3.1\n\n\nflextable\n0.9.11\n\n\nfontawesome\n0.5.3\n\n\nfontBitstreamVera\n0.1.1\n\n\nfontLiberation\n0.1.0\n\n\nfontquiver\n0.2.1\n\n\nforcats\n1.0.1\n\n\nforeach\n1.5.2\n\n\nforecast\n9.0.0\n\n\nformatters\n0.5.12\n\n\nFormula\n1.2-5\n\n\nfracdiff\n1.5-3\n\n\nfs\n1.6.6\n\n\ngdtools\n0.5.0\n\n\ngeeasy\n0.1.3\n\n\ngeeM\n0.10.1\n\n\ngeepack\n1.3.13\n\n\ngenerics\n0.1.4\n\n\nggExtra\n0.11.0\n\n\nggformula\n1.0.1\n\n\nggiraph\n0.9.4\n\n\nggplot2\n4.0.2\n\n\nggpmisc\n0.6.3\n\n\nggpp\n0.6.0\n\n\nggpubr\n0.6.2\n\n\nggrepel\n0.9.6\n\n\nggridges\n0.5.7\n\n\nggsci\n4.2.0\n\n\nggsignif\n0.6.4\n\n\ngh\n1.5.0\n\n\ngitcreds\n0.1.2\n\n\nglmnet\n4.1-10\n\n\nglue\n1.8.0\n\n\ngoftest\n1.2-3\n\n\ngridExtra\n2.3\n\n\ngt\n1.3.0\n\n\ngtable\n0.3.6\n\n\ngtsummary\n2.5.0\n\n\nhaven\n2.5.5\n\n\nhere\n1.0.2\n\n\nhighr\n0.11\n\n\nhms\n1.1.4\n\n\nhtmltools\n0.5.9\n\n\nhtmlwidgets\n1.6.4\n\n\nhttpuv\n1.6.16\n\n\nhttr\n1.4.7\n\n\nhttr2\n1.2.2\n\n\nini\n0.3.1\n\n\nisoband\n0.3.0\n\n\niterators\n1.0.14\n\n\njquerylib\n0.1.4\n\n\njsonlite\n2.0.0\n\n\njuicyjuice\n0.1.0\n\n\nkableExtra\n1.4.0\n\n\nkernlab\n0.9-33\n\n\nkinship2\n1.9.6.2\n\n\nknitr\n1.51\n\n\nlabeling\n0.4.3\n\n\nlabelled\n2.16.0\n\n\nlater\n1.4.5\n\n\nlazyeval\n0.2.2\n\n\nlearnr\n0.11.6\n\n\nlifecycle\n1.0.5\n\n\nlitedown\n0.9\n\n\nlme4\n1.1-38\n\n\nlmodel2\n1.7-4\n\n\nlmtest\n0.9-40\n\n\nlogger\n0.4.1\n\n\nlogr\n1.3.9\n\n\nlogrx\n0.4.0\n\n\nlpSolve\n5.6.23\n\n\nlubridate\n1.9.5\n\n\nmagrittr\n2.0.4\n\n\nmarkdown\n2.0\n\n\nMatrixModels\n0.5-4\n\n\nmemoise\n2.0.1\n\n\nMESS\n0.6.0\n\n\nmetacore\n0.2.1\n\n\nmetatools\n0.2.0\n\n\nmicrobenchmark\n1.5.0\n\n\nmime\n0.13\n\n\nminiUI\n0.1.2\n\n\nminqa\n1.2.8\n\n\nmixtools\n2.0.0.1\n\n\nmmrm\n0.3.17\n\n\nmodelr\n0.1.11\n\n\nmosaicCore\n0.9.5\n\n\nmultcomp\n1.4-29\n\n\nmultcompView\n0.1-10\n\n\nmvtnorm\n1.3-3\n\n\nnestcolor\n0.1.3\n\n\nnloptr\n2.2.1\n\n\nnumDeriv\n2016.8-1.1\n\n\nofficer\n0.7.3\n\n\nopenssl\n2.3.4\n\n\notel\n0.2.0\n\n\nparallelly\n1.46.1\n\n\npbkrtest\n0.5.5\n\n\npharmaverseadam\n1.2.0\n\n\npharmaverseraw\n0.1.1\n\n\npharmaversesdtm\n1.4.0\n\n\npillar\n1.11.1\n\n\npkgbuild\n1.4.8\n\n\npkgcache\n2.2.4\n\n\npkgconfig\n2.0.3\n\n\npkgdepends\n0.9.0\n\n\npkglite\n0.2.4\n\n\npkgload\n1.5.0\n\n\nplotly\n4.12.0\n\n\nplyr\n1.8.9\n\n\npng\n0.1-8\n\n\npolynom\n1.4-1\n\n\npraise\n1.0.0\n\n\nprettyunits\n1.2.0\n\n\nprocessx\n3.8.6\n\n\nprogress\n1.2.3\n\n\npromises\n1.5.0\n\n\nps\n1.9.1\n\n\npurrr\n1.2.1\n\n\nquadprog\n1.5-8\n\n\nquantmod\n0.4.28\n\n\nquantreg\n6.1\n\n\nquarto\n1.5.1\n\n\nR.cache\n0.17.0\n\n\nR.methodsS3\n1.8.2\n\n\nR.oo\n1.27.1\n\n\nR.utils\n2.13.0\n\n\nR6\n2.6.1\n\n\nragg\n1.5.0\n\n\nrappdirs\n0.3.4\n\n\nrbibutils\n2.4.1\n\n\nRColorBrewer\n1.1-3\n\n\nRcpp\n1.1.1\n\n\nRcppArmadillo\n15.2.3-1\n\n\nRcppEigen\n0.3.4.0.2\n\n\nRcppParallel\n5.1.11-1\n\n\nRcppTOML\n0.2.3\n\n\nRdpack\n2.6.6\n\n\nreactable\n0.4.5\n\n\nreactablefmtr\n2.0.0\n\n\nreactR\n0.6.1\n\n\nreadr\n2.1.6\n\n\nreadxl\n1.4.5\n\n\nreformulas\n0.4.4\n\n\nrematch\n2.0.0\n\n\nremotes\n2.5.0\n\n\nrenv\n1.1.7\n\n\nreticulate\n1.44.1\n\n\nrlang\n1.1.7\n\n\nrlistings\n0.2.13\n\n\nrmarkdown\n2.30\n\n\nroxygen2\n7.3.3\n\n\nrprojroot\n2.1.1\n\n\nrstatix\n0.7.3\n\n\nrstudioapi\n0.18.0\n\n\nrtables\n0.6.15\n\n\nrtables.officer\n0.1.2\n\n\nrvg\n0.4.0\n\n\nS7\n0.2.1\n\n\nsandwich\n3.1-1\n\n\nsass\n0.4.10\n\n\nscales\n1.4.0\n\n\nsdtm.oak\n0.2.0\n\n\nsegmented\n2.2-1\n\n\nsessioninfo\n1.2.3\n\n\nshape\n1.4.6.1\n\n\nshiny\n1.12.1\n\n\nshinybusy\n0.3.3\n\n\nshinycssloaders\n1.1.0\n\n\nshinyjs\n2.1.1\n\n\nshinylive\n0.3.0.9000\n\n\nshinyTree\n0.3.1\n\n\nshinyvalidate\n0.1.3\n\n\nshinyWidgets\n0.9.0\n\n\nsortable\n0.6.0\n\n\nsourcetools\n0.1.7-1\n\n\nsparkline\n2.0\n\n\nSparseM\n1.84-2\n\n\nsplus2R\n1.3-5\n\n\nstringi\n1.8.7\n\n\nstringr\n1.6.0\n\n\nstyler\n1.11.0\n\n\nsvglite\n2.2.2\n\n\nsys\n3.4.3\n\n\nsystemfonts\n1.3.1\n\n\nteal\n1.1.0\n\n\nteal.code\n0.7.1\n\n\nteal.data\n0.8.0\n\n\nteal.logger\n0.4.1\n\n\nteal.modules.clinical\n0.12.0\n\n\nteal.modules.general\n0.6.0\n\n\nteal.reporter\n0.6.0\n\n\nteal.slice\n0.7.1\n\n\nteal.transform\n0.7.1\n\n\nteal.widgets\n0.5.1\n\n\ntern\n0.9.10\n\n\ntern.gee\n0.1.5\n\n\ntern.mmrm\n0.3.3\n\n\ntestthat\n3.3.2\n\n\ntextshaping\n1.0.4\n\n\ntfrmt\n0.3.0\n\n\nTH.data\n1.1-5\n\n\ntibble\n3.3.1\n\n\ntidyr\n1.3.2\n\n\ntidyselect\n1.2.1\n\n\ntimechange\n0.4.0\n\n\ntimeDate\n4052.112\n\n\ntinytex\n0.58\n\n\ntippy\n0.1.0\n\n\nTMB\n1.9.19\n\n\ntseries\n0.10-59\n\n\nTTR\n0.24.4\n\n\ntzdb\n0.5.0\n\n\nunglue\n0.1.0\n\n\nurca\n1.3-4\n\n\nutf8\n1.2.6\n\n\nuuid\n1.2-2\n\n\nV8\n8.0.1\n\n\nvctrs\n0.7.1\n\n\nviridisLite\n0.4.3\n\n\nvistime\n1.2.4\n\n\nvroom\n1.7.0\n\n\nwaldo\n0.6.2\n\n\nwebshot\n0.5.5\n\n\nwhirl\n0.3.2\n\n\nwhisker\n0.4.1\n\n\nwithr\n3.0.2\n\n\nxfun\n0.56\n\n\nxml2\n1.5.2\n\n\nxportr\n0.5.0\n\n\nxtable\n1.8-4\n\n\nxts\n0.14.1\n\n\nyaml\n2.3.12\n\n\nzephyr\n0.1.3\n\n\nzip\n2.3.3\n\n\nzoo\n1.8-15\n\n\npak\n0.9.2\n\n\nbase\n4.5.2\n\n\nboot\n1.3-32\n\n\nclass\n7.3-23\n\n\ncluster\n2.1.8.1\n\n\ncodetools\n0.2-20\n\n\ncompiler\n4.5.2\n\n\ndatasets\n4.5.2\n\n\nforeign\n0.8-90\n\n\ngraphics\n4.5.2\n\n\ngrDevices\n4.5.2\n\n\ngrid\n4.5.2\n\n\nKernSmooth\n2.23-26\n\n\nlattice\n0.22-7\n\n\nMASS\n7.3-65\n\n\nMatrix\n1.7-4\n\n\nmethods\n4.5.2\n\n\nmgcv\n1.9-3\n\n\nnlme\n3.1-168\n\n\nnnet\n7.3-20\n\n\nparallel\n4.5.2\n\n\nrpart\n4.1.24\n\n\nspatial\n7.3-18\n\n\nsplines\n4.5.2\n\n\nstats\n4.5.2\n\n\nstats4\n4.5.2\n\n\nsurvival\n3.8-3\n\n\ntcltk\n4.5.2\n\n\ntools\n4.5.2\n\n\nutils\n4.5.2",
+    "text": "Session Info\n\nsessionInfo()\n\nR version 4.5.2 (2025-10-31)\nPlatform: x86_64-pc-linux-gnu\nRunning under: Ubuntu 24.04.3 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 \nLAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\ntime zone: UTC\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.5.2    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.5.2       htmltools_0.5.9   otel_0.2.0        yaml_2.3.12      \n [9] rmarkdown_2.30    knitr_1.51        jsonlite_2.0.0    xfun_0.56        \n[13] digest_0.6.39     rlang_1.1.7       evaluate_1.0.5   \n\n\n\n\nInstalled Packages\n\nknitr::kable(installed.packages()[, c(\"Package\", \"Version\")], row.names = FALSE)\n\n\n\n\nPackage\nVersion\n\n\n\n\nabind\n1.4-8\n\n\nadmiral\n1.4.1\n\n\nadmiraldev\n1.4.0\n\n\nadmiralonco\n1.4.0\n\n\narchive\n1.1.12.1\n\n\naskpass\n1.2.1\n\n\nassertthat\n0.2.1\n\n\nautoslider.core\n0.3.2\n\n\nbackports\n1.5.0\n\n\nbase64enc\n0.1-6\n\n\nbigD\n0.3.1\n\n\nbit\n4.6.0\n\n\nbit64\n4.6.0-1\n\n\nbitops\n1.0-9\n\n\nbrew\n1.0-10\n\n\nbrio\n1.1.5\n\n\nbroom\n1.0.12\n\n\nbsicons\n0.1.2\n\n\nbslib\n0.10.0\n\n\ncachem\n1.1.0\n\n\ncallr\n3.7.6\n\n\ncar\n3.1-5\n\n\ncarData\n3.0-6\n\n\ncards\n0.7.1\n\n\ncardx\n0.3.2\n\n\ncaTools\n1.18.3\n\n\ncellranger\n1.1.0\n\n\ncheckmate\n2.3.4\n\n\ncli\n3.6.5\n\n\nclipr\n0.8.0\n\n\ncolorspace\n2.1-2\n\n\ncolourpicker\n1.3.0\n\n\ncommon\n1.1.4\n\n\ncommonmark\n2.0.0\n\n\nconfintr\n1.0.2\n\n\ncorrplot\n0.95\n\n\ncowplot\n1.2.0\n\n\ncpp11\n0.5.3\n\n\ncrayon\n1.5.3\n\n\ncrosstalk\n1.2.2\n\n\ncurl\n7.0.0\n\n\ndata.table\n1.18.2.1\n\n\nDeriv\n4.2.0\n\n\ndesc\n1.4.3\n\n\ndiffobj\n0.3.6\n\n\ndigest\n0.6.39\n\n\ndoBy\n4.7.1\n\n\ndplyr\n1.2.0\n\n\nDT\n0.34.0\n\n\nellipsis\n0.3.2\n\n\nemmeans\n2.0.1\n\n\nestimability\n1.5.1\n\n\nevaluate\n1.0.5\n\n\nfarver\n2.1.2\n\n\nfastmap\n1.2.0\n\n\nfilelock\n1.0.3\n\n\nfilters\n0.3.1\n\n\nflextable\n0.9.11\n\n\nfontawesome\n0.5.3\n\n\nfontBitstreamVera\n0.1.1\n\n\nfontLiberation\n0.1.0\n\n\nfontquiver\n0.2.1\n\n\nforcats\n1.0.1\n\n\nforeach\n1.5.2\n\n\nforecast\n9.0.0\n\n\nformatters\n0.5.12\n\n\nFormula\n1.2-5\n\n\nfracdiff\n1.5-3\n\n\nfs\n1.6.6\n\n\ngdtools\n0.5.0\n\n\ngeeasy\n0.1.3\n\n\ngeeM\n0.10.1\n\n\ngeepack\n1.3.13\n\n\ngenerics\n0.1.4\n\n\nggExtra\n0.11.0\n\n\nggformula\n1.0.1\n\n\nggiraph\n0.9.4\n\n\nggplot2\n4.0.2\n\n\nggpmisc\n0.6.3\n\n\nggpp\n0.6.0\n\n\nggpubr\n0.6.2\n\n\nggrepel\n0.9.6\n\n\nggridges\n0.5.7\n\n\nggsci\n4.2.0\n\n\nggsignif\n0.6.4\n\n\ngh\n1.5.0\n\n\ngitcreds\n0.1.2\n\n\nglmnet\n4.1-10\n\n\nglue\n1.8.0\n\n\ngoftest\n1.2-3\n\n\ngridExtra\n2.3\n\n\ngt\n1.3.0\n\n\ngtable\n0.3.6\n\n\ngtsummary\n2.5.0\n\n\nhaven\n2.5.5\n\n\nhere\n1.0.2\n\n\nhighr\n0.11\n\n\nhms\n1.1.4\n\n\nhtmltools\n0.5.9\n\n\nhtmlwidgets\n1.6.4\n\n\nhttpuv\n1.6.16\n\n\nhttr\n1.4.8\n\n\nhttr2\n1.2.2\n\n\nini\n0.3.1\n\n\nisoband\n0.3.0\n\n\niterators\n1.0.14\n\n\njquerylib\n0.1.4\n\n\njsonlite\n2.0.0\n\n\njuicyjuice\n0.1.0\n\n\nkableExtra\n1.4.0\n\n\nkernlab\n0.9-33\n\n\nkinship2\n1.9.6.2\n\n\nknitr\n1.51\n\n\nlabeling\n0.4.3\n\n\nlabelled\n2.16.0\n\n\nlater\n1.4.6\n\n\nlazyeval\n0.2.2\n\n\nlearnr\n0.11.6\n\n\nlifecycle\n1.0.5\n\n\nlitedown\n0.9\n\n\nlme4\n1.1-38\n\n\nlmodel2\n1.7-4\n\n\nlmtest\n0.9-40\n\n\nlogger\n0.4.1\n\n\nlogr\n1.3.9\n\n\nlogrx\n0.4.0\n\n\nlpSolve\n5.6.23\n\n\nlubridate\n1.9.5\n\n\nmagrittr\n2.0.4\n\n\nmarkdown\n2.0\n\n\nMatrixModels\n0.5-4\n\n\nmemoise\n2.0.1\n\n\nMESS\n0.6.0\n\n\nmetacore\n0.2.1\n\n\nmetatools\n0.2.0\n\n\nmicrobenchmark\n1.5.0\n\n\nmime\n0.13\n\n\nminiUI\n0.1.2\n\n\nminqa\n1.2.8\n\n\nmixtools\n2.0.0.1\n\n\nmmrm\n0.3.17\n\n\nmodelr\n0.1.11\n\n\nmosaicCore\n0.9.5\n\n\nmultcomp\n1.4-29\n\n\nmultcompView\n0.1-10\n\n\nmvtnorm\n1.3-3\n\n\nnestcolor\n0.1.3\n\n\nnloptr\n2.2.1\n\n\nnumDeriv\n2016.8-1.1\n\n\nofficer\n0.7.3\n\n\nopenssl\n2.3.4\n\n\notel\n0.2.0\n\n\nparallelly\n1.46.1\n\n\npbkrtest\n0.5.5\n\n\npharmaverseadam\n1.2.0\n\n\npharmaverseraw\n0.1.1\n\n\npharmaversesdtm\n1.4.0\n\n\npillar\n1.11.1\n\n\npkgbuild\n1.4.8\n\n\npkgcache\n2.2.4\n\n\npkgconfig\n2.0.3\n\n\npkgdepends\n0.9.0\n\n\npkglite\n0.2.4\n\n\npkgload\n1.5.0\n\n\nplotly\n4.12.0\n\n\nplyr\n1.8.9\n\n\npng\n0.1-8\n\n\npolynom\n1.4-1\n\n\npraise\n1.0.0\n\n\nprettyunits\n1.2.0\n\n\nprocessx\n3.8.6\n\n\nprogress\n1.2.3\n\n\npromises\n1.5.0\n\n\nps\n1.9.1\n\n\npurrr\n1.2.1\n\n\nquadprog\n1.5-8\n\n\nquantmod\n0.4.28\n\n\nquantreg\n6.1\n\n\nquarto\n1.5.1\n\n\nR.cache\n0.17.0\n\n\nR.methodsS3\n1.8.2\n\n\nR.oo\n1.27.1\n\n\nR.utils\n2.13.0\n\n\nR6\n2.6.1\n\n\nragg\n1.5.0\n\n\nrappdirs\n0.3.4\n\n\nrbibutils\n2.4.1\n\n\nRColorBrewer\n1.1-3\n\n\nRcpp\n1.1.1\n\n\nRcppArmadillo\n15.2.3-1\n\n\nRcppEigen\n0.3.4.0.2\n\n\nRcppParallel\n5.1.11-1\n\n\nRcppTOML\n0.2.3\n\n\nRdpack\n2.6.6\n\n\nreactable\n0.4.5\n\n\nreactablefmtr\n2.0.0\n\n\nreactR\n0.6.1\n\n\nreadr\n2.1.6\n\n\nreadxl\n1.4.5\n\n\nreformulas\n0.4.4\n\n\nrematch\n2.0.0\n\n\nremotes\n2.5.0\n\n\nrenv\n1.1.7\n\n\nreticulate\n1.45.0\n\n\nrlang\n1.1.7\n\n\nrlistings\n0.2.13\n\n\nrmarkdown\n2.30\n\n\nroxygen2\n7.3.3\n\n\nrprojroot\n2.1.1\n\n\nrstatix\n0.7.3\n\n\nrstudioapi\n0.18.0\n\n\nrtables\n0.6.15\n\n\nrtables.officer\n0.1.2\n\n\nrvg\n0.4.0\n\n\nS7\n0.2.1\n\n\nsandwich\n3.1-1\n\n\nsass\n0.4.10\n\n\nscales\n1.4.0\n\n\nsdtm.oak\n0.2.0\n\n\nsegmented\n2.2-1\n\n\nsessioninfo\n1.2.3\n\n\nshape\n1.4.6.1\n\n\nshiny\n1.12.1\n\n\nshinybusy\n0.3.3\n\n\nshinycssloaders\n1.1.0\n\n\nshinyjs\n2.1.1\n\n\nshinylive\n0.3.0.9000\n\n\nshinyTree\n0.3.1\n\n\nshinyvalidate\n0.1.3\n\n\nshinyWidgets\n0.9.0\n\n\nsortable\n0.6.0\n\n\nsourcetools\n0.1.7-1\n\n\nsparkline\n2.0\n\n\nSparseM\n1.84-2\n\n\nsplus2R\n1.3-5\n\n\nstringi\n1.8.7\n\n\nstringr\n1.6.0\n\n\nstyler\n1.11.0\n\n\nsvglite\n2.2.2\n\n\nsys\n3.4.3\n\n\nsystemfonts\n1.3.1\n\n\nteal\n1.1.0\n\n\nteal.code\n0.7.1\n\n\nteal.data\n0.8.0\n\n\nteal.logger\n0.4.1\n\n\nteal.modules.clinical\n0.12.0\n\n\nteal.modules.general\n0.6.0\n\n\nteal.reporter\n0.6.0\n\n\nteal.slice\n0.7.1\n\n\nteal.transform\n0.7.1\n\n\nteal.widgets\n0.5.1\n\n\ntern\n0.9.10\n\n\ntern.gee\n0.1.5\n\n\ntern.mmrm\n0.3.3\n\n\ntestthat\n3.3.2\n\n\ntextshaping\n1.0.4\n\n\ntfrmt\n0.3.0\n\n\nTH.data\n1.1-5\n\n\ntibble\n3.3.1\n\n\ntidyr\n1.3.2\n\n\ntidyselect\n1.2.1\n\n\ntimechange\n0.4.0\n\n\ntimeDate\n4052.112\n\n\ntinytex\n0.58\n\n\ntippy\n0.1.0\n\n\nTMB\n1.9.19\n\n\ntseries\n0.10-59\n\n\nTTR\n0.24.4\n\n\ntzdb\n0.5.0\n\n\nunglue\n0.1.0\n\n\nurca\n1.3-4\n\n\nutf8\n1.2.6\n\n\nuuid\n1.2-2\n\n\nV8\n8.0.1\n\n\nvctrs\n0.7.1\n\n\nviridisLite\n0.4.3\n\n\nvistime\n1.2.4\n\n\nvroom\n1.7.0\n\n\nwaldo\n0.6.2\n\n\nwebshot\n0.5.5\n\n\nwhirl\n0.3.2\n\n\nwhisker\n0.4.1\n\n\nwithr\n3.0.2\n\n\nxfun\n0.56\n\n\nxml2\n1.5.2\n\n\nxportr\n0.5.0\n\n\nxtable\n1.8-4\n\n\nxts\n0.14.1\n\n\nyaml\n2.3.12\n\n\nzephyr\n0.1.3\n\n\nzip\n2.3.3\n\n\nzoo\n1.8-15\n\n\npak\n0.9.2\n\n\nbase\n4.5.2\n\n\nboot\n1.3-32\n\n\nclass\n7.3-23\n\n\ncluster\n2.1.8.1\n\n\ncodetools\n0.2-20\n\n\ncompiler\n4.5.2\n\n\ndatasets\n4.5.2\n\n\nforeign\n0.8-90\n\n\ngraphics\n4.5.2\n\n\ngrDevices\n4.5.2\n\n\ngrid\n4.5.2\n\n\nKernSmooth\n2.23-26\n\n\nlattice\n0.22-7\n\n\nMASS\n7.3-65\n\n\nMatrix\n1.7-4\n\n\nmethods\n4.5.2\n\n\nmgcv\n1.9-3\n\n\nnlme\n3.1-168\n\n\nnnet\n7.3-20\n\n\nparallel\n4.5.2\n\n\nrpart\n4.1.24\n\n\nspatial\n7.3-18\n\n\nsplines\n4.5.2\n\n\nstats\n4.5.2\n\n\nstats4\n4.5.2\n\n\nsurvival\n3.8-3\n\n\ntcltk\n4.5.2\n\n\ntools\n4.5.2\n\n\nutils\n4.5.2",
     "crumbs": [
       "Session Info"
     ]
